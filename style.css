@@ -1,0 +1,121 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;s
+}
+.navbar {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #ff6f61;
+
+}
+.navbar .navbar-brand {
+    color: #151212;
+}
+.navbar .nav-link {
+    color: #fff;
+}
+.navbar .nav-link:hover {
+    color: #ffe4e1;
+}
+.dropdown-menu {
+    background-color: #ff6f61;
+}
+.dropdown-item {
+    color: #fff;
+}
+.dropdown-item:hover {
+    background-color: #ff8b7e;
+}
+.header {
+    background-color: #eab9ed;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    color: #151212;
+
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #fff;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.card-body {
+    padding: 16px;
+}
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+.card-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.price {
+    font-size: 1.2em;
+    color: #b12704;
+    margin-bottom: 10px;
+}
+.buy-button, .{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #ff6f61;
+    color: white;
+    transition: background-color 0.2s;
+}
+.button {
+    background-color: #ff6f61;
+    color: white;
+    transition: background-color 0.2s;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+} 
+.buy-button:hover, .button:hover {
+    background-color: #a9c1dc;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+nav.navbar {
+    margin-bottom: 20px;
+}
+.dropdown-menu a.dropdown-item {
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+.dropdown-menu a.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
