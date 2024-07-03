@@ -34,9 +34,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO users (username, password) VALUES ('$username', '$hashed_password')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Registrasi berhasil!";
-            // Arahkan ke halaman login
-            // header("Location: login.html");
+            echo 
+            "<script>
+                alert('REGISTRASI BERHASIL');
+                document.location.href='login.html';
+            </script>";
+            
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }

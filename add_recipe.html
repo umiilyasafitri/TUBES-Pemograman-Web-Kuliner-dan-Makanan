@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Resep</title>
+</head>
+<body>
+    <h2>Tambah Resep</h2>
+    <form action="add_recipe.php" method="post">
+        <label for="title">Judul Resep:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        <label for="ingredients">Bahan-bahan:</label><br>
+        <textarea id="ingredients" name="ingredients" required></textarea><br><br>
+        <label for="instructions">Instruksi:</label><br>
+        <textarea id="instructions" name="instructions" required></textarea><br><br>
+        <input type="submit" value="Tambahkan Resep">
+    </form>
+    <a href="logout.php">Logout</a>
+</body>
+</html>

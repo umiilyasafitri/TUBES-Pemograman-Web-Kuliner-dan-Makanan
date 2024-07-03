@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root"; // Default XAMPP username
 $password = ""; // Default XAMPP password is empty
@@ -28,9 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verifikasi password
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
-            echo "Login berhasil!";
-            // Arahkan ke halaman lain, misalnya dashboard
-            // header("Location: dashboard.php");
+            $_SESSION['user_id'] = $row['id'];
+            echo "<script>
+                alert('LOGIN TELAH BERHASIL');
+                document.location.href='add_recipe.html';
+            </script>";
         } else {
             echo "Password salah!";
         }
